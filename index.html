@@ -59,11 +59,11 @@
 
     <ul class="slider" data-orbit>
       <li>
-        <img src="img/3.jpg" alt="slide 1" />
+        <img src="img/3.jpg" alt="slide 1" id="orbitheight"/>
         <div class="orbit-caption">
           Caption One.
         </div>
-        <h3 class="text-center slidetext">GAMIFICATION</h3>
+        <h3 class="text-center slidetext" id="slidetext1">GAMIFICATION</h3>
       </li>
       
       <li>
@@ -71,7 +71,7 @@
         <div class="orbit-caption">
           Caption Two.
         </div>
-        <h3 class="text-center slidetext">TELEVISION ADVERTISING</h3>
+        <h3 class="text-center slidetext" id="slidetext2">TELEVISION ADVERTISING</h3>
       </li>
 
       <li>
@@ -79,7 +79,7 @@
         <div class="orbit-caption">
           Caption Three.
         </div>
-        <h3 class="text-center slidetext">SECOND SCREEN APPLICATIONS</h3>
+        <h3 class="text-center slidetext" id="slidetext3">SECOND SCREEN APPLICATIONS</h3>
       </li>
     </ul>
 
@@ -184,6 +184,18 @@
     <script src="js/foundation.min.js"></script>
     <script>
       $(document).foundation();
+      var h = document.getElementById('orbitheight').clientHeight;
+      var v = h/2.5;
+      console.log(h);
+      console.log(v);
+      var slidetext = document.getElementById('slidetext1');
+      slidetext.style.top=-v+"px";
+
+      var slidetext2 = document.getElementById('slidetext2');
+      slidetext2.style.top=-v+"px";
+
+      var slidetext3 = document.getElementById('slidetext3');
+      slidetext3.style.top=-v+"px";
     </script>
   </body>
 </html>

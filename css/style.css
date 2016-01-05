@@ -146,7 +146,7 @@ body {
   margin-top: -80px; }
 
 .menutext {
-  color: #333; }
+  color: #FFF; }
 
 h3 {
   text-transform: uppercase;
@@ -197,5 +197,9 @@ h6 {
 
 .contact {
   margin-top: -50px; }
+
+@media only screen and (max-width: 640px) {
+  .slidetext {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
