@@ -125,7 +125,7 @@ body {
 
 .slidetext{color: #FFF;position: relative; z-index: 1000; top: -140px; font-size: 25px; margin-top: -80px;}
 
-.menutext{color: #333;}
+.menutext{color: #FFF;}
 
 h3{text-transform: uppercase;letter-spacing: 3px; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 600; color: #333; }
 
@@ -153,6 +153,9 @@ h6{font-family: 'Roboto', sans-serif; letter-spacing:1px; text-transform: upperc
 
 .contact{margin-top: -50px;}
 
+@media only screen and (max-width: 640px) {
+    .slidetext{display:none;}
+}
 
 
 
