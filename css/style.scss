@@ -1,7 +1,109 @@
-.orbit-bullets{display:none
+/*VARIABLE*/
+
+$backgroundColor: #F4F4F4;
+$black: #000;
+$white: #FFF;
+$almostBlack: #222;
+$darkGrey: #333;
+$grey: #666;
+$lightGrey: #EEE;
+
+/*BASIC SCSS*/
+
+body {
+background: $backgroundColor;
 }
 
-.orbit-slide-number{display:none
+p{ 
+font-family: 'Roboto', sans-serif;
+font-size: 16px;  
+font-weight: 100;
+letter-spacing: 1px; 
+margin-bottom: none;
+}
+
+h3{
+text-transform: uppercase;
+letter-spacing: 3px;
+font-family: 'Roboto', sans-serif; 
+font-size: 18px; 
+font-weight: 600; 
+color: $darkGrey; 
+}
+
+h4{  
+font-family: 'Roboto', sans-serif;
+font-size: 16px;  
+font-weight: 600;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+
+h5{
+font-weight: 700; 
+padding-top: 30px; 
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+
+h6{
+font-family: 'Roboto', sans-serif;
+letter-spacing:1px; 
+text-transform: uppercase;
+font-size: 10px;
+}
+
+h3>a{
+color:$darkGrey;
+border-bottom: 2px solid $darkGrey; 
+padding-bottom: 5px;
+}
+
+h6>a{
+color:$darkGrey; 
+font-weight: 700;
+}
+
+h4>a{
+color:$darkGrey;
+}
+
+a:hover{
+color: $grey;
+}
+
+a>img:hover{
+opacity: 0.8;
+}
+
+/*MARGINS*/
+
+.margin50{
+margin-top:50px;
+margin-bottom:50px;
+}
+
+.margin20{
+margin-top:20px;
+margin-bottom:20px;
+}
+
+.margin30top{
+margin-top: 30px;
+}
+
+.marginbot{
+margin-bottom:40px;
+}
+
+/*SLIDER*/
+
+.orbit-bullets{
+display:none
+}
+
+.orbit-slide-number{
+display:none
 }
 
 .orbit-caption{
@@ -12,150 +114,174 @@ display:none;
 display:none;
 }
 
-.panel{padding-top:50px;}
-
-.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6 {
-    line-height: 1;
-    margin-bottom: 0.3rem;
+.slidetext{
+color: $white;
+position: relative; 
+z-index: 1000; 
+top: -140px; 
+font-size: 25px; 
+margin-top: -80px;
 }
-
-.latest{margin-bottom:40px;margin-top:40px;}
-
-.panel{
-	margin-bottom:0;
-}
-
-.panel h6 {
-
-    margin-bottom: 1rem;
-    font-size:12px;
-}
-
-.lblog{margin-bottom:40px;}
-
-.marginbot{margin-bottom:40px;}
-
-.blogoverview{
-	margin-top:50px;
-	margin-bottom:50px;
-}
-
-.margin50{
-	margin-top:50px;
-	margin-bottom:50px;
-}
-
-.margin20{
-	margin-top:20px;
-	margin-bottom:20px;
-}
-
-.margin30top {
-  margin-top: 30px;
- }
-
-
-.top-bar{
-  background-color: #FFF;
-  color: #000;
-}
-
-.top-bar.expanded .title-area{background: #FFF;}
-
-.top-bar .name h1 a{
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #333;
-  font-size: 12px;
-
-}
-
-.panel{
-  background:#FFF;
-  border: none;
-}
-body > nav > section > ul > li{
-    background: #FFF;
-}
-
-
-.top-bar-section li:not(.has-form) a:not(.button) {
-    background: #FFF;
-    color: #000;
-   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  letter-spacing: 2px;
-  font-size: 10px;
-}
-
-
-
-
-.top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"]{
-  border-right: solid 1px #EEE;;
-}
-
-button, .button { font-family: 'Roboto', sans-serif; background-color: #333;border:2px solid #333; color:#FFF; font-size: 12px; letter-spacing: 2px; font-weight: 500;}
-
-button, .button:hover {background-color: #FFF;border:2px solid #333; color:#333; }
-
-button, .button:active {background-color: #FFF;border:2px solid #333; color:#333; }
-
-button, .button:focus {background-color: #FFF;border:2px solid #333; color:#333; }
-
-h4{  font-family: 'Roboto', sans-serif;font-size: 16px;  font-weight: 600;
-  letter-spacing: 2px;text-transform: uppercase;}
-
-  .panel h6{ margin-top:10px; font-family: 'Roboto', sans-serif;font-size: 10px;  font-weight: 600;
-  letter-spacing: 2px;}
-
-p{ font-family: 'Roboto', sans-serif;font-size: 16px;  font-weight: 100;
-  letter-spacing: 1px; margin-bottom: none;}
-
-
-#active {background: #222; color:#FFF;}
-
-
-
-body {
-  background:#F4F4F4;}
-
-.backblog{background-color: #FFF; padding: 20px;}
-
-.slidetext{color: #FFF;position: relative; z-index: 1000; top: -140px; font-size: 25px; margin-top: -80px;}
-
-.menutext{color: #FFF;}
-
-h3{text-transform: uppercase;letter-spacing: 3px; font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 600; color: #333; }
-
-.social{margin: 10px;}
-
-h3>a{color:#333;border-bottom: 2px solid #333; padding-bottom: 5px;}
-
-h6>a{color:#333; font-weight: 700;}
-
-h4>a{color:#333;}
-
-a:hover{color: #666;}
-
-a>img:hover{opacity: 0.8;}
-
-h5{font-weight: 700; padding-top: 30px; text-transform: uppercase;letter-spacing: 2px;}
-
-
-.side-nav li a:not(.button){color: #666;}
-
-.side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus{color: #333;}
-
-
-h6{font-family: 'Roboto', sans-serif; letter-spacing:1px; text-transform: uppercase;font-size: 10px;}
-
-.contact{margin-top: -50px;}
 
 @media only screen and (max-width: 640px) {
-    .slidetext{display:none;}
+    .slidetext{
+    display:none;
+    }
+}
+
+/*PANEL*/
+
+.panel{
+padding-top:50px;
+margin-bottom:0;
+background:$white;
+border: none;
+    
+    h1, h2, h3, h4, h5{
+    line-height: 1;
+    margin-bottom: 0.3rem    
+    }
+    
+    h6{
+    margin-bottom: 1rem;
+    margin-top:10px; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;  
+    font-weight: 600;
+    letter-spacing: 2px;
+    }
+}
+
+/*BLOG*/
+
+.latest{
+margin-bottom:40px;margin-top:40px;
+}
+
+.lblog{
+margin-bottom:40px;
 }
 
 
+.blogoverview{
+margin-top:50px;
+margin-bottom:50px;
+}
+
+.backblog{
+background-color: $white; 
+padding: 20px;
+}
+
+/*NAVIGATION*/
+
+.top-bar{
+background-color: $white;
+color: $black;
+    
+    .expanded{
+        background: $white;
+        .title-area{
+            background: $white;
+        }
+    }
+    
+    .name{
+        h1{
+            a{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: $darkGrey;
+            font-size: 12px;     
+            }
+        }
+    }
+}
+
+.top-bar.expanded .title-area{
+background: $white;
+}
+
+
+
+
+body > nav > section > ul > li{
+background: $white;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+background: $white;
+color: $black;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+letter-spacing: 2px;
+font-size: 10px;
+}
+
+.top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"]{
+border-right: solid 1px $lightGrey;;
+}
+
+
+button, .button {
+font-family: 'Roboto', sans-serif; 
+background-color: $darkGrey;
+border:2px solid $darkGrey; 
+color:$white; 
+font-size: 12px; 
+letter-spacing: 2px; 
+font-weight: 500;
+    
+    &:hover {
+    background-color: $white;
+    border:2px solid $darkGrey;
+    color:$darkGrey; 
+    }
+    
+    &:active {
+    background-color: $white;
+    border:2px solid $darkGrey; 
+    color:$darkGrey;
+    }
+    
+    &:Focus {
+    background-color: $white;
+    border:2px solid $darkGrey; 
+    color:$darkGrey; 
+    }
+}
+
+#active {
+background: $almostBlack; 
+color:$white;
+}
+
+.menutext{
+color: $white;
+}
+
+.side-nav li a:not(.button){
+color: $grey;
+    
+    &:hover {
+    color: $darkGrey;
+    }
+    
+     &:focus {
+    color: $darkGrey;
+    }
+}
+
+/*CONTACT*/
+
+.contact{
+margin-top: -50px;
+}
+
+/*SOCIAL*/
+
+.social{
+margin: 10px;
+}
 
