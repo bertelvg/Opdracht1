@@ -1,3 +1,76 @@
+/*VARIABLE*/
+/*BASIC SCSS*/
+body {
+  background: #F4F4F4; }
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  margin-bottom: none; }
+
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333; }
+
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+h5 {
+  font-weight: 700;
+  padding-top: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+h6 {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 10px; }
+
+h3 > a {
+  color: #333;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px; }
+
+h6 > a {
+  color: #333;
+  font-weight: 700; }
+
+h4 > a {
+  color: #333; }
+
+a:hover {
+  color: #666; }
+
+a > img:hover {
+  opacity: 0.8; }
+
+/*MARGINS*/
+.margin50 {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.margin20 {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.margin30top {
+  margin-top: 30px; }
+
+.marginbot {
+  margin-bottom: 40px; }
+
+/*SLIDER*/
 .orbit-bullets {
   display: none; }
 
@@ -10,62 +83,67 @@
 .orbit-timer {
   display: none; }
 
+.slidetext {
+  color: #FFF;
+  position: relative;
+  z-index: 1000;
+  top: -140px;
+  font-size: 25px;
+  margin-top: -80px; }
+
+@media only screen and (max-width: 640px) {
+  .slidetext {
+    display: none; } }
+/*PANEL*/
 .panel {
-  padding-top: 50px; }
+  padding-top: 50px;
+  margin-bottom: 0;
+  background: #FFF;
+  border: none; }
+  .panel h1, .panel h2, .panel h3, .panel h4, .panel h5 {
+    line-height: 1;
+    margin-bottom: 0.3rem; }
+  .panel h6 {
+    margin-bottom: 1rem;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px; }
 
-.panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6 {
-  line-height: 1;
-  margin-bottom: 0.3rem; }
-
+/*BLOG*/
 .latest {
   margin-bottom: 40px;
   margin-top: 40px; }
 
-.panel {
-  margin-bottom: 0; }
-
-.panel h6 {
-  margin-bottom: 1rem;
-  font-size: 12px; }
-
 .lblog {
-  margin-bottom: 40px; }
-
-.marginbot {
   margin-bottom: 40px; }
 
 .blogoverview {
   margin-top: 50px;
   margin-bottom: 50px; }
 
-.margin50 {
-  margin-top: 50px;
-  margin-bottom: 50px; }
+.backblog {
+  background-color: #FFF;
+  padding: 20px; }
 
-.margin20 {
-  margin-top: 20px;
-  margin-bottom: 20px; }
-
-.margin30top {
-  margin-top: 30px; }
-
+/*NAVIGATION*/
 .top-bar {
   background-color: #FFF;
   color: #000; }
+  .top-bar .expanded {
+    background: #FFF; }
+    .top-bar .expanded .title-area {
+      background: #FFF; }
+  .top-bar .name h1 a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #333;
+    font-size: 12px; }
 
 .top-bar.expanded .title-area {
   background: #FFF; }
-
-.top-bar .name h1 a {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #333;
-  font-size: 12px; }
-
-.panel {
-  background: #FFF;
-  border: none; }
 
 body > nav > section > ul > li {
   background: #FFF; }
@@ -89,117 +167,39 @@ button, .button {
   font-size: 12px;
   letter-spacing: 2px;
   font-weight: 500; }
-
-button, .button:hover {
-  background-color: #FFF;
-  border: 2px solid #333;
-  color: #333; }
-
-button, .button:active {
-  background-color: #FFF;
-  border: 2px solid #333;
-  color: #333; }
-
-button, .button:focus {
-  background-color: #FFF;
-  border: 2px solid #333;
-  color: #333; }
-
-h4 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase; }
-
-.panel h6 {
-  margin-top: 10px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 2px; }
-
-p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 100;
-  letter-spacing: 1px;
-  margin-bottom: none; }
+  button:hover, .button:hover {
+    background-color: #FFF;
+    border: 2px solid #333;
+    color: #333; }
+  button:active, .button:active {
+    background-color: #FFF;
+    border: 2px solid #333;
+    color: #333; }
+  button:Focus, .button:Focus {
+    background-color: #FFF;
+    border: 2px solid #333;
+    color: #333; }
 
 #active {
   background: #222;
   color: #FFF; }
 
-body {
-  background: #F4F4F4; }
-
-.backblog {
-  background-color: #FFF;
-  padding: 20px; }
-
-.slidetext {
-  color: #FFF;
-  position: relative;
-  z-index: 1000;
-  top: -140px;
-  font-size: 25px;
-  margin-top: -80px; }
-
 .menutext {
   color: #FFF; }
 
-h3 {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  color: #333; }
-
-.social {
-  margin: 10px; }
-
-h3 > a {
-  color: #333;
-  border-bottom: 2px solid #333;
-  padding-bottom: 5px; }
-
-h6 > a {
-  color: #333;
-  font-weight: 700; }
-
-h4 > a {
-  color: #333; }
-
-a:hover {
-  color: #666; }
-
-a > img:hover {
-  opacity: 0.8; }
-
-h5 {
-  font-weight: 700;
-  padding-top: 30px;
-  text-transform: uppercase;
-  letter-spacing: 2px; }
-
 .side-nav li a:not(.button) {
   color: #666; }
+  .side-nav li a:not(.button):hover {
+    color: #333; }
+  .side-nav li a:not(.button):focus {
+    color: #333; }
 
-.side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus {
-  color: #333; }
-
-h6 {
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 10px; }
-
+/*CONTACT*/
 .contact {
   margin-top: -50px; }
 
-@media only screen and (max-width: 640px) {
-  .slidetext {
-    display: none; } }
+/*SOCIAL*/
+.social {
+  margin: 10px; }
 
 /*# sourceMappingURL=style.css.map */
